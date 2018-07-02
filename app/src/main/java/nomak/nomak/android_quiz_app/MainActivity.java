@@ -167,7 +167,7 @@ public class MainActivity extends AppCompatActivity {
         String answer8;
         question8_answer = (EditText) this.findViewById(R.id.question8_answer);
         answer8 = question8_answer.getText().toString().toLowerCase();
-        if (answer8.equals("wrist")) {
+        if (answer8.equals("Ganon")) {
             answer8_score = 1;
         } else {
             answer8_score = 0;
