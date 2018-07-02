@@ -83,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
         String answer2;
         question2_answer = (EditText) this.findViewById(R.id.question2_answer);
         answer2 = question2_answer.getText().toString().toLowerCase();
-        if (answer2.equals("vulcanizing")) {
+        if (answer2.equals("sony")) {
             answer2_score = 1;
         } else {
             answer2_score = 0;
