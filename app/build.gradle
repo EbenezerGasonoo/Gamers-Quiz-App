@@ -5,7 +5,7 @@ android {
     buildToolsVersion '27.0.3'
 
     defaultConfig {
-        applicationId "rocks.athrow.android_quiz_app"
+        applicationId "nomak.nomak.android_quiz_app"
         minSdkVersion 21
         targetSdkVersion 23
         versionCode 1

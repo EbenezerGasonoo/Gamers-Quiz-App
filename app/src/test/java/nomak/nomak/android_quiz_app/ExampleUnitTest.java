@@ -1,4 +1,4 @@
-package rocks.athrow.android_quiz_app;
+package nomak.nomak.android_quiz_app;
 
 import org.junit.Test;
 

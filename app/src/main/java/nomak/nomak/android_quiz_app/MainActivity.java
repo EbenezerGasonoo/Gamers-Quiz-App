@@ -1,7 +1,6 @@
-package rocks.athrow.android_quiz_app;
+package nomak.nomak.android_quiz_app;
 
 import android.content.Context;
-import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -10,7 +9,6 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.CheckBox;
 import android.widget.EditText;
-import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
@@ -68,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
         int final_score;
 
         //------------------------------------------------------------------------------------------
-        // Question 1 - Correct Answer is #3 (DNA)
+        // Question One - Correct Answer is #3 (Mario)
         //------------------------------------------------------------------------------------------
         Boolean answer1;
 
@@ -80,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
             answer1_score = 0;
         }
         //------------------------------------------------------------------------------------------
-        // Question 2 - Correct Answer is "Vulcanizing"
+        // Question Two - Correct Answer is "Sony"
         //------------------------------------------------------------------------------------------
         String answer2;
         question2_answer = (EditText) this.findViewById(R.id.question2_answer);
@@ -91,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
             answer2_score = 0;
         }
         //------------------------------------------------------------------------------------------
-        // Question 3  - Correct Answers are #1 (Ribosomes) and #3 (Golgi Apparatus)
+        // Question Three  - Correct Answers are #1 (Atari) and #3 (Atlus)
         //------------------------------------------------------------------------------------------
         Boolean answer3_choice1;
         Boolean answer3_choice2;
@@ -111,18 +109,18 @@ public class MainActivity extends AppCompatActivity {
             answer3_score = 0;
         }
         //------------------------------------------------------------------------------------------
-        // Question 4 - Correct Answer is "Gravity"
+        // Question four - Correct Answer is "Kratos"
         //------------------------------------------------------------------------------------------
         String answer4;
         question4_answer = (EditText) this.findViewById(R.id.question4_answer);
         answer4 = question4_answer.getText().toString().toLowerCase();
-        if (answer4.equals("gravity")) {
+        if (answer4.equals("kratos")) {
             answer4_score = 1;
         } else {
             answer4_score = 0;
         }
         //------------------------------------------------------------------------------------------
-        // Question 5  - Correct Answers is #2 "Pine trees"
+        // Question five  - Correct Answers is #2 "Halo"
         //------------------------------------------------------------------------------------------
         Boolean answer5;
         question5_choice2 = (RadioButton) this.findViewById(R.id.question5_choice2);
@@ -133,18 +131,18 @@ public class MainActivity extends AppCompatActivity {
             answer5_score = 0;
         }
         //------------------------------------------------------------------------------------------
-        // Question 6 - Correct Answer is "Clouds" or "Cloud"
+        // Question six - Correct Answer is "Steam" or "Valve"
         //------------------------------------------------------------------------------------------
         String answer6;
         question6_answer = (EditText) this.findViewById(R.id.question6_answer);
         answer6 = question6_answer.getText().toString().toLowerCase();
-        if (answer6.equals("clouds") || answer6.equals("cloud")) {
+        if (answer6.equals("steam") || answer6.equals("valve")) {
             answer6_score = 1;
         } else {
             answer6_score = 0;
         }
         //------------------------------------------------------------------------------------------
-        // Question 7  - Correct Answers are #3 (Earth) and #4 (Pluto)
+        // Question Seven  - Correct Answers are #3 (Link) and #4 (Zelda)
         //------------------------------------------------------------------------------------------
         Boolean answer7_choice1;
         Boolean answer7_choice2;
@@ -164,7 +162,7 @@ public class MainActivity extends AppCompatActivity {
             answer7_score = 0;
         }
         //------------------------------------------------------------------------------------------
-        // Question 8 - Correct Answer is "Wrist"
+        // Question Eight - Correct Answer is "Ganon"
         //------------------------------------------------------------------------------------------
         String answer8;
         question8_answer = (EditText) this.findViewById(R.id.question8_answer);
@@ -175,7 +173,7 @@ public class MainActivity extends AppCompatActivity {
             answer8_score = 0;
         }
         //------------------------------------------------------------------------------------------
-        // Question 9  - Correct Answers is #2 "Stalagmites"
+        // Question Nine  - Correct Answers is #2 "Sega"
         //------------------------------------------------------------------------------------------
         Boolean answer9;
         question9_choice2 = (RadioButton) this.findViewById(R.id.question9_choice2);
@@ -186,24 +184,24 @@ public class MainActivity extends AppCompatActivity {
             answer9_score = 0;
         }
         //------------------------------------------------------------------------------------------
-        // Question 10 - Correct Answer is "Smelting"
+        // Question Ten - Correct Answer is "Master Sword"
         //------------------------------------------------------------------------------------------
         String answer10;
         question10_answer = (EditText) this.findViewById(R.id.question10_answer);
         answer10 = question10_answer.getText().toString().toLowerCase();
-        if (answer10.equals("smelting")) {
+        if (answer10.equals("master sword")) {
             answer10_score = 1;
         } else {
             answer10_score = 0;
         }
         //------------------------------------------------------------------------------------------
-        // Final Score
+        // Final Scoreline
         //------------------------------------------------------------------------------------------
         final_score = answer1_score + answer2_score + answer3_score + answer4_score + answer5_score +
                 answer6_score + answer7_score + answer8_score + answer9_score + answer10_score;
 
         if (final_score == 10) {
-            resultsDisplay = "Perfect! You scored 10 out of 10";
+            resultsDisplay = "Awesome! You scored 10 out of 10 You are a True Gamer GG";
         } else {
             resultsDisplay = "Try again. You scored " + final_score + " out of 10";
         }
