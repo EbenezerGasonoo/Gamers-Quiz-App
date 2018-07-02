@@ -162,12 +162,12 @@ public class MainActivity extends AppCompatActivity {
             answer7_score = 0;
         }
         //------------------------------------------------------------------------------------------
-        // Question Eight - Correct Answer is "Ganon"
+        // Question Eight - Correct Answer is "Gannon"
         //------------------------------------------------------------------------------------------
         String answer8;
         question8_answer = (EditText) this.findViewById(R.id.question8_answer);
         answer8 = question8_answer.getText().toString().toLowerCase();
-        if (answer8.equals("Ganon")) {
+        if (answer8.equals("gannon")) {
             answer8_score = 1;
         } else {
             answer8_score = 0;
